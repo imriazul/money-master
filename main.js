@@ -43,7 +43,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const savingText = document.getElementById('save-persent-input').value;
     const savingPersent = parseFloat(savingText);
     const savings = returnabileableBalanse * savingPersent / 100;
-
+    //done
     // apply input condition 
     if (savingPersent >= 0 && savingPersent <= 100) {
         // savings calculation
