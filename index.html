@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-400">
+    <section class="w-8/12 mx-auto bg-white	my-12 ">
+        <h1 class="text-center text-3xl font-bold text-sky-600	">Money Master</h1>
+        <div class="flex p-6 ">
+            <img class="w-2/4 mx-3" src="image.png" alt="">
+            <!-- flex content-center -->
+            <div class="w-2/4 mx-3 bg-gray-100 text-center">
+                <div class="pt-6">
+                    <h2 class="font-bold mb-2">Minthly income</h2>
+                    <label class="font-medium">Selary</label>
+                    <input class="px-3 mx-2 mb-2" type="number" name="" id="income" placeholder="Monthly selary"><br>
+                    <h2 class="font-bold my-3">Monthly Expenses</h2>
+                    <label class="font-medium">Food</label>
+                    <input class="px-3 mx-2 mb-2" type="number" name="" id="food-exp" placeholder="Enter Amount"><br>
+                    <label class="font-medium">Rent</label>
+                    <input class="px-3 mx-2 mb-2" type="number" name="" id="rent-exp" placeholder="Enter Amount"><br>
+                    <label class="font-medium">Market</label>
+                    <input class="px-3 mx-2 mb-2" type="number" name="" id="market-exp" placeholder="Enter Amount">
+                    <button
+                       id="calculate-btn" class="rounded-lg bg-sky-400 hover:bg-sky-500 font-medium px-5 py-1 text-white m-2">Calculate</button>
+                </div>
+                <div>
+                    <p class="font-medium">Total Expenses: <span id="total-expenses"></span></p>
+                    <p class="font-medium">Abileable Balance: <span id="abaile-blns"></span></p>
+                </div>
+                <div>
+                    <label>Save:</label>
+                    <input class="px-3 ms-2 mb-2 w-1/4" type="number" name="" id="save-persent-input" placeholder="Enter number"> <span class="mx-2">%</span><button id="save-btn" class="rounded bg-sky-400 hover:bg-sky-500 font-medium px-5 py-1 text-white">Save</button>
+                    <p class="font-medium">Saving Amount: <span id="saving-amount"></span></p>
+                    <p class="font-medium"> Remaining Balance: <span id="remain-blns"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
